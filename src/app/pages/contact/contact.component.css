@@ -1,0 +1,78 @@
+
+/*.container::after{
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+    background-image: url(../../../assets/teacher.svg);
+    background-size: cover;
+    z-index: -1;
+}*/
+.contact-box{
+    height: 100%;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.img-div{
+    margin: 10%;
+
+}
+.img-div img{
+    height: 100%;
+    width: 100%;
+}
+.info{
+    margin: 10%;
+    padding: 25px 40px;
+}
+h2{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.field{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: rgba(230, 230, 230, 0.6);
+    border: 2px solid rgba(0,0,0,0);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    outline: none;
+    transition: .3s;
+}
+.field:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 2px solid  #9BCC8A;
+}
+.field:focus{
+    background-color: #ffff;
+    border: 2px solid  #9BCC8A;
+}
+.area{
+    min-height: 150px;
+}
+.btn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #9BCC8A;
+    transition: .3s;
+}
+.btn:hover{
+    background-color: #3F3D56;
+    color: #9BCC8A;
+}
+@media screen and (max-width: 768px){
+    .contact-box{
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+}

@@ -1,0 +1,16 @@
+<nav #navbar>
+    <div class="logo">
+      <h4>Excellent English School</h4>
+    </div>
+    <ul #navLinks class="nav-links" [ngClass]="{'nav-active':burgerClicked}">
+      <li><a (click)="goToHome()">Home</a></li>
+      <li><a>Courses</a></li>
+      <li><a (click)="goToContact()">Contact Us</a></li>
+      <li><a>Online Test</a></li>
+    </ul>
+    <div #burger (click)="navSlide()" class="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </nav>
