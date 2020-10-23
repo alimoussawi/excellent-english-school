@@ -1,0 +1,72 @@
+<div id="Courses" class="main">
+    <h1>{{'courses.header'|translate}}</h1>
+    <ul class="cards">
+      <li class="cards_item">
+        <div class="card">
+        <div class="card card_face">
+          <div class="card_image"><img src="../../../assets/children-min.jpg"></div>
+          <div class="card_content">
+            <h2 class="card_title">{{'courses.childrenCourse.name'|translate}}</h2>
+            <p  #card_1_text1 class="card_text">
+              {{'courses.childrenCourse.intro'|translate}}<br>
+              {{'courses.childrenCourse.details'|translate}}</p>
+                <button class="btn" (click)="jumpUp()" routerLink="/courses-details/childrenCourse" >{{'courses.buttons'|translate}}</button> 
+          </div>
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="../../../assets/adult-learn-min.jpg"></div>
+          <div class="card_content">
+            <h2 class="card_title">{{'courses.adultCourse.name'|translate}}</h2>
+            <p #card_2_text1 class="card_text">{{'courses.adultCourse.intro'|translate}}<br>
+              {{'courses.adultCourse.details'|translate}}</p>
+                <button class="btn" (click)="jumpUp()" routerLink="/courses-details/adultCourse" >{{'courses.buttons'|translate}}</button> 
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="../../../assets/exam-prep-min.jpg"></div>
+          <div class="card_content">
+            <h2 class="card_title">{{'courses.examCourse.name'|translate}}</h2>
+            <p #card_3_text1 class="card_text">{{'courses.examCourse.intro'|translate}}<br>
+              {{'courses.examCourse.details'|translate}}</p>
+                <button class="btn" (click)="jumpUp()" routerLink="/courses-details/examCourse">{{'courses.buttons'|translate}}</button> 
+            </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="../../../assets/company-min.jpg"></div>
+          <div class="card_content">
+            <h2 class="card_title">{{'courses.businessCourse.name'|translate}}</h2>
+            <p #card_4_text1 class="card_text">{{'courses.businessCourse.intro'|translate}}<br>
+              {{'courses.businessCourse.details'|translate}}</p>
+      </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="../../../assets/sepcial-min.jpg"></div>
+          <div class="card_content">
+            <h2 class="card_title">{{'courses.specialCourse.name'|translate}}</h2>
+            <p #card_5_text1 class="card_text">{{'courses.specialCourse.intro'|translate}}<br>
+              {{'courses.specialCourse.details'|translate}}</p>
+          </div>
+        </div>
+      </li>
+      <li class="cards_item">
+        <div class="card">
+          <div class="card_image"><img src="../../../assets/private-lesson-min.jpg"></div>
+          <div class="card_content">
+            <h2 class="card_title">{{'courses.individualCourse.name'|translate}}</h2>
+            <p #card_6_text1 class="card_text">
+              {{'courses.individualCourse.intro'|translate}}<br>
+              {{'courses.individualCourse.details'|translate}}</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>

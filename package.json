@@ -16,14 +16,16 @@
     "@angular/compiler": "~10.0.9",
     "@angular/core": "~10.0.9",
     "@angular/forms": "~10.0.9",
+    "@angular/localize": "^10.1.5",
     "@angular/platform-browser": "~10.0.9",
     "@angular/platform-browser-dynamic": "~10.0.9",
     "@angular/router": "~10.0.9",
+    "@ngx-translate/core": "^13.0.0",
+    "@ngx-translate/http-loader": "^6.0.0",
     "gsap": "^3.5.1",
     "jump.js": "^1.0.2",
     "ng-media-query": "^1.0.3",
     "rxjs": "~6.5.5",
-    "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },
   "devDependencies": {

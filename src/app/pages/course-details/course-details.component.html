@@ -1,0 +1,11 @@
+<div class="container">
+    <button routerLink="/" class="btn"><-------</button>
+    <h2>{{courseName}}</h2>
+<div class="details-card " *ngFor="let level of courseLevels">
+    <div class="description">
+      <h1>{{level.levelName}}</h1>
+      <h2> {{level.levelCode}}, {{level.levelDuration}}, {{level.levelAge}}</h2>
+      <p *ngFor="let lvlDesc of level.levelDesc">{{lvlDesc}}</p>
+    </div>
+  </div>
+</div>

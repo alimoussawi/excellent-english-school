@@ -1,10 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-
-gsap.registerPlugin(ScrollTrigger);
-
+import jump from "jump.js";
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -16,6 +12,11 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   
+  }
+  jumpToContact(){
+    jump('#contact',{
+      duration: 1000,
+    });
   }
 
 }

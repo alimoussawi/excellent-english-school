@@ -5,6 +5,7 @@
     'intro image image';
     justify-items: center;
     grid-column-gap: 1rem;
+
 }
 .nothing{
     height: 500px;
@@ -39,16 +40,28 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    
+    cursor: pointer;
   }
 
 .btn-1{
-    background-color: #9BCC8A;
+    background-color: #77bb60;
     color: #3F3D56;
 }
 .btn-2{
     background-color: #3F3D56;
     color: #ffffff;
+}
+@media screen and (max-width:950px){
+    .intro h1{
+        font-size: 30px;
+    }
+    .intro p{
+        font-size: 15px;
+    }
+    .btn {
+        padding: 8px 20px;
+        font-size: 12px;
+      }
 }
 @media screen and (max-width: 768px){
     .container{
@@ -64,10 +77,12 @@
      .intro{
         grid-area: intro;
         margin: 5%;
-
     }
-    .btn {
-        padding: 8px 20px;
-        font-size: 12px;
-      }
+    .intro h1{
+        font-size: 50px;
+    }
+    .intro p{
+        font-size: 25px;
+    }
 }
+

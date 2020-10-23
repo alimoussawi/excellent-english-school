@@ -10,7 +10,7 @@ nav{
 }
 .logo{
     opacity: 0;
-    color: #9BCC8A;
+    color: #77bb60;
     font-weight: bolder;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -19,14 +19,25 @@ nav{
 .nav-links{
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 50%;
 }
 .nav-links li{
     list-style: none;
 }
+.nav-links li select {
+    background-color: transparent;
+    appearance: none; 
+    color: #77bb60;
+    border: none;
+    height: 100%;
+    width: 2.5rem;
+    padding: 5%;
+    font-size: 15px;
+    cursor: pointer;
+}
 .nav-links a{
     text-decoration: none;
-    color: #9BCC8A;
+    color: #77bb60;
     letter-spacing: 3px;
     font-weight: bolder;
     font-size: 18px;
@@ -42,14 +53,17 @@ nav{
     height: 3px;
     margin: 5px;
 }
-
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+  }
 
 @media screen and (max-width: 1200px){
     .nav-links{
        width: 60%;
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 900px){
     
     
     .nav-links{
@@ -59,7 +73,7 @@ nav{
         height: 92vh;
         top: 8vh;
         background-color: #3F3D56;
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;   
         width: 100%;

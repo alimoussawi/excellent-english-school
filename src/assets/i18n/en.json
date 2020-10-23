@@ -1,0 +1,287 @@
+{   "navBar":{
+            "HomeLink":"Home",
+            "CoursesLink":"Courses",
+            "ContactUsLink":"Contact us",
+            "OnlineTestLink":"Online Test"
+    
+        },
+
+    "Home":{
+           "HeaderText":"Excellence through efforts",
+           "HeaderDesc":"It’s not how good you are at the language now, it’s how good you want to be at English.",
+           "ContactUsButton":"Contact us",
+           "OnlineTestButton":"Online Test"
+    
+        },
+    "courses":{
+        "header":"OUR COURSES",
+        "buttons":"more details",
+        "childrenCourse":{
+            "name":"COURSES FOR CHILDREN",
+            "intro":"Age: 5 to 12",
+            "details":"Communicative approach and task-based learning Made to suit children’s age and needs"
+        },
+        "adultCourse":{
+            "name":"COURSES FOR ADULTS",
+            "intro":"Age: 16+",
+            "details":"Level of English and age are taken into account for placement into the right group"
+        },
+        "examCourse":{
+            "name":"EXAM PREPARATION COURSES",
+            "intro":"Age: children 8+; adults 16+",
+            "details":"Cambridge English, КЕТ, PET, FCE, CAE Different approaches and methods necessary for exam preparation"
+        },
+        "businessCourse":{
+            "name":"BUSINESS LANGUAGE COURSES",
+            "intro":"Number of hours and students to be agreed with the company",
+            "details":"The courses are designed to meet company’s need and goals"
+        },
+        "specialCourse":{
+            "name":"FOR SPECIAL PURPOSES",
+            "intro":"Number of hours and students to be agreed with the client",
+            "details":"Tailor-made courses for your special needs and spheres your work in"
+        },
+        "individualCourse":{
+            "name":"ONE-TO-ONE LESSONS",
+            "intro":"Number of hours to be agreed with the student",
+            "details":"The courses are designed for student’s special needs and goals"
+        }
+    },
+    "CourseDetails":{
+        "childrenCourse":{
+            "courseName":"childrenCourse",
+            "courseLevels":[
+                {
+                    "levelName":"Pre-Starters 1.1",
+                    "levelCode":"pre A1",
+                    "levelDuration":"72 hours/36 weeks",
+                    "levelAge":"age: 5-6 years old",
+                    "levelDesc":["Pre - Starters 1.1 is a course for preschool children who are just starting to learn English.",      
+                                "The course consists of lessons on writing, reading, listening and acting with numbers.",
+                                "The learning process is built on a simple, for perception, colorful material that motivates to study lessons and to approach new topics with interest.",
+                                "The structure of the First Friends 1 course is structured  in an understandable form, with a smooth transition from easy to harder lessons.",
+                                "After completing this course, children will know the alphabet, numbers from 1 to 10, basic phrases.",
+                                "This course is a good start in preparing for language learning in school."]
+                },
+                {
+                    "levelName":"Pre-Starters 1.2",
+                    "levelCode":"pre A1",
+                    "levelDuration":"72 hours 36 weeks",
+                    "levelAge":"6-7 years old",
+                    "levelDesc":["Pre - Starters 1.2 is the second part of a two-part course. After passing the first level, which dealt with easier topics, in the second part you will find more difficult topics, but despite this, the study is still just as fun and exciting. First Friends 2  will be a good support for the transition to the next levels of English learning.",
+                                "During this course, children will learn the numbers from 1 to 20, they will perform easy mathematical examples for addition and subtraction, get acquainted with the basic letter combinations and will be able to use them when speaking and reading, basic phrases and grammatical constructions. Writing and reading skills will be enhanced.",
+                                "This course is a good start in preparing for language learning in school."]
+                },
+                {
+                    "levelName":"Pre-Starters",
+                    "levelCode":"pre A1",
+                    "levelDuration":"72 hours 36 weeks",
+                    "levelAge":"6-7 years old",
+                    "levelDesc":["Pre - Starters - This course is suitable for children who have already started first grade, but have not yet studied English. Classes are held in an interactive form, the emphasis is on developing writing, reading, listening and speaking skills through full immersion in the language environment: all lessons are held in English using authentic textbooks and books for reading, watching training videos.",
+                    "for 9 months children will learn:",
+                    "- the alphabet, numbers from 1 to 20, perform easy mathematical examples for addition and subtraction, get acquainted with the basic letter combinations and be able to use them when speaking and reading",
+                    "- basic phrases and be able to freely support a conversation about themselves, their interests, family, weather, etc.",
+                    "- to write, read and listen to more than 150 words and phrases in context."]
+                }
+            ]
+        },
+        "adultCourse":{
+            "courseName":"adultCourse",
+            "courseLevels":[
+                {
+                    "levelName":"complete biginner",
+                    "levelCode":"A1",
+                    "levelDuration":"120-150 hours/ 30-36 weeks",
+                    "levelAge":"Adults 16+",
+                    "levelDesc":["This course is made for adult students who have never learnt English before. It will help you develop your basic English language skills and to build your confidence when communicating in English.",
+                                "On this course, you will:",
+                                "-learn the basic structures in English",
+                                "-focus on building your vocabulary",
+                                "-practise the language learned by doing pair work and role-plays",
+                                "-develop your reading, writing, listening and speaking skills."]
+                },
+                {
+                    "levelName":"Elementary",
+                    "levelCode":"A2",
+                    "levelDuration":"120-150 hours/ 30-36 weeks",
+                    "levelAge":"Adults 16+",
+                    "levelDesc":["The elementary English course for non-native speakers of English teaches elementary level standard English with a focus on communication skills, basic grammar, and listening & reading skills necessary for success in introductory English as a Foreign language.",
+                                "Students who successfully complete our A2 course can:",
+                                "understand and use familiar everyday expressions and very basic phrases aimed at the satisfaction of needs of a concrete type.",
+                                "introduce themselves and others and can ask and answer questions about personal details such as where they live, people they know and things they have.",
+                                "interact in a simple way provided the other person talks slowly and clearly and is prepared to help."]
+                },
+                {
+                    "levelName":"Pre-Intermediate",
+                    "levelCode":"B1",
+                    "levelDuration":"120-150 hours/ 30-36 weeks",
+                    "levelAge":"Adults 16+",
+                    "levelDesc":["Our pre-intermediate courses are for people who wish to make progress in the language. Typical learners at B1 can use and understand simple English relating to personal information and everyday life, but find it difficult to talk about things that are less familiar.",
+                                "Students who successfully complete our B1 course can:",
+                                "-understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment).",
+                                "-communicate in simple and routine tasks requiring a simple and direct exchange of information on familiar and routine matters.",
+                                "-describe in simple terms aspects of his/her background, immediate environment and matters in areas of immediate need."]
+                },
+                {
+                    "levelName":"Intermediate",
+                    "levelCode":"B1+",
+                    "levelDuration":"120-150 hours/ 30-36 weeks",
+                    "levelAge":"Adults 16+",
+                    "levelDesc":["Our B1+ level courses are for people with an intermediate level of English who wish to make progress in the language. Typical learners at B1+ level are able to use the language independently with familiar topics, and are more comfortable understanding and expressing opinions. However, they may have trouble with more abstract uses of the language.",
+                                "Students who successfully complete our B1+ course can:",
+                                "-understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc.",
+                                "-deal with most situations likely to arise whilst travelling in an area where English is spoken.",
+                                "-produce simple connected text on topics which are familiar or of personal interest.",
+                                "-describe experiences and events, dreams, hopes & ambitions and briefly give reasons and explanations for opinions and plans."]
+                },
+                {
+                    "levelName":"Upper-Intermediate",
+                    "levelCode":"B2",
+                    "levelDuration":"120-150 hours/ 30-36 weeks",
+                    "levelAge":"Adults 16+",
+                    "levelDesc":["Our B2 level courses are for people with an upper intermediate level of English who wish to make progress in the language. Typical learners at B2 level are able to use the main structures of the language with some confidence and have a wide range of vocabulary.",
+                                "They can adapt their language to a variety of situations, and they do not rely on fixed patterns of language or short, simple utterances. However, they may have trouble with some unfamiliar subject areas, and lack control over longer, more complex language.",
+                                "Our B2-level courses can also be taken with our Fluency courses. These classes focus on spoken English in a variety of social, business and academic situations.",
+                                "Students who successfully complete our B2 course can:",
+                                "-understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in his/her field of specialisation.",
+                                "-interact with a degree of fluency and spontaneity that makes regular interaction with native speakers quite possible without strain for either party.",
+                                "-produce clear, detailed text on a wide range of subjects and explain a viewpoint on a topical issue giving the advantages and disadvantages of various options."]
+                },
+                {
+                    "levelName":"Advanced",
+                    "levelCode":"C1",
+                    "levelDuration":"120-150 hours/ 30-36 weeks",
+                    "levelAge":"Adults 16+",
+                    "levelDesc":["Our C1 level courses are for people with an advanced level of English who wish to make progress in the language. Typical learners at C1 level are able to use the language easily and fluently, and are aware of the relationship between language and culture, and of the significance of register.",
+                                "They are therefore able to adapt their language to a variety of situations and can use English in a creative and flexible way, and can respond appropriately to unexpected and unusual situations. However, they may have trouble with particularly complex situations, and responding to multiple sources of information on unfamiliar topics.",
+                                "Students who successfully complete our C1 course can:",
+                                "-understand a wide range of demanding, longer texts, and recognise implicit meaning.",
+                                "-express him/herself fluently and spontaneously without much obvious searching for expressions.",
+                                "-use language flexibly and effectively for social, academic and professional purposes.",
+                                "-produce clear, well-structured, detailed text on complex subjects, showing controlled use of organisational patterns, connectors and cohesive devices."]
+                }
+            ]
+        },
+        "examCourse":{
+            "courseName":"Экзаменационные курсы",
+            "courseLevels":[
+                {
+                    "levelName":"Starters",
+                    "levelCode":"Pre A1",
+                    "levelDuration":"72 часа/ 36 недель",
+                    "levelAge":"7-8 лет",
+                    "levelDesc":["Первый Кембриджский тест для младших школьников Cambridge English: Young Learners",
+                    "Pre A1 Starters, прежнее название Cambridge English: Starters (YLE Starters), один из экзаменов Cambridge English: Young Learners. Это самый первый шаг ребенка по пути изучения английского языка.",
+                    "Эти экзамены знакомят детей с повседневным устным и письменным английским, а также являются отличным способом развить уверенность ребенка в своих силах и помогают ему улучшить свой английский.",
+                    "Материал тестов базируется на знакомых ребенку темах и проверяет навыки понимания на слух, говорения, чтения и письма, необходимые для эффективного общения на английском языке.",
+                    "Экзамен Pre A1 Starters поможет вашему ребенку сделать первые шаги к:",
+                    "-пониманию базового контента на английском языке в интернете",
+                    "-чтению книг, слушанию песенок, просмотру телепередач и фильмов на английском языке",
+                    "-знакомству с детьми из разных стран мира"]
+                },
+                {
+                    "levelName":"Movers",
+                    "levelCode":"pre A1",
+                    "levelDuration":"72 hours 36 weeks",
+                    "levelAge":"8-9 лет",
+                    "levelDesc":["Cambridge English: Movers, также известный как Young Learners English: Movers, является следующим этапом на пути ребенка в изучении языка после прохождения уровня Cambridge English: Starters. При подготовке к экзамену дети изучают новые материал, получение сертификата является важным мотивационным фактором для продолжения изучения английского языка.",
+                    "Cambridge English: Movers – это второй из трех тестов Cambridge English: Young Learners, предназначенных для школьников в возрасте от 7 до 12 лет.",
+                    "Тест Cambridge English: Movers соответствует уровню A1 Общеевропейской шкалы языковой компетенции (CEFR). На этом уровне ваш ребенок сможет:",
+                    "понимать простые указания или принимать участие в фактическом разговоре на знакомые темы",
+                    "понимать элементарные информационные надписи, указания или информацию",
+                    "заполнять простые формы и писать сообщения с указанием времени, даты и места.",
+                    "Этот тест охватывает все четыре языковых навыка: аудирование, устную речь, чтение и письмо.",
+                    "Cambridge English: Movers является вторым этапом на пути овладения практическими навыками английского языка, которые помогут детям:",
+                    "использовать англоязычные ресурсы из сети Интернет и других средств массовой информации",
+                    "наслаждаться книгами, песнями, телепередачами и фильмами на английском",
+                    "приобрести друзей по всему миру",
+                    "использовать английский в качестве международного языка",
+                    "подготовиться для успешного получения образования и дальнейшей работы."]
+                },
+                {
+                    "levelName":"Flyers",
+                    "levelCode":"A2",
+                    "levelDuration":"72 часа/ 36 недель",
+                    "levelAge":"9-10 лет",
+                    "levelDesc":["Cambridge English: Flyers, также известный как Young Learners English: Flyers, является следующим этапом на пути ребенка в изучении английского языка после прохождения уровня Cambridge English: Movers. Сертификат свидетельствует о владении повседневным письменным и устным английским на базовом уровне.", 
+                    "Cambridge English: Flyers – это самый высокий уровень из трех занимательных и мотивирующих тестов Cambridge English: Young Learners, предназначенных для школьников в возрасте от 7 до 12 лет.",
+                    "Тест Cambridge English: Flyers соответствует уровню A2 Общеевропейской шкалы языковой компетенции (CEFR). На этом уровне дети могут:",
+                    "понимать простые письменные тексты на английском языке",
+                    "общаться в привычных ситуациях",
+                    "понимать короткие письменные сообщения и простые устные указания",
+                    "понимать и использовать простые фразы и выражения",
+                    "представляться и отвечать на элементарные вопросы о себе",
+                    "общаться с англоговорящими людьми, когда они говорят медленно и четко",
+                    "писать короткие простые сообщения",
+                    "Этот тест охватывает все четыре языковых навыка: аудирование, устную речь, чтение и письмо.",
+                    "Благодаря Cambridge English: Flyers дети продолжают развивать практические навыки общения на английском языке, которые помогут им:",
+                    "использовать англоязычные ресурсы из сети Интернет и других средств массовой информации",
+                    "наслаждаться книгами, песнями, телепередачами и фильмами на английском",
+                    "приобрести друзей по всему миру",
+                    "использовать английский в качестве международного языка",
+                    "подготовиться для успешного получения образования и дальнейшей работы."]
+                },
+                {
+                    "levelName":"KET",
+                    "levelCode":"A2",
+                    "levelDuration":"100-110 часов/ 36 недель",
+                    "levelAge":"11-13 лет",
+                    "levelDesc":["Cambridge English: Key (Базовый уровень владения английским языком), также известный как Key English Test (KET), является квалификацией базового уровня сложности и подтверждает вашу способность общаться на английском языке в простых повседневных ситуациях. Она подтверждает, что вы заложили хорошую основу дальнейшего изучения английского языка.",
+                    "Cambridge English: Key соответствует уровню A2 Общеевропейской шкалы языковой компетенции (CEFR). Владея английским языком на этом уровне, вы сможете:",
+                    "понимать и употреблять элементарные фразы и выражения",
+                    "представляться и отвечать на элементарные вопросы о себе",
+                    "общаться по-английски, когда ваш собеседник говорит медленно и отчетливо",
+                    "писать короткие, простые сообщения."]
+                },
+                {
+                    "levelName":"PET",
+                    "levelCode":"B1",
+                    "levelDuration":"162-216 часов/ 54-72 недели",
+                    "levelAge":"12-15 лет",
+                    "levelDesc":["Cambridge English: Preliminary, также известный как Preliminary English Test (PET), является квалификацией среднего уровня сложности. Сертификат подтверждает, что вы можете использовать английский язык для работы, учебы и путешествий.",
+                    "Экзамен Cambridge English: Preliminary соответствует уровню B1 Общеевропейской шкалы языковой компетенции (CEFR). Владея английским языком на этом уровне, вы сможете:", 
+                    "понимать основную информацию, содержащуюся в прямых указаниях или объявлениях для общественности",
+                    "эффективно справляться с большинством ситуаций, которые могут возникнуть во время туристической поездки в англоязычную страну",
+                    "задавать простые вопросы и принимать участие в фактических разговорах и обсуждениях, возникающих в рабочей обстановке",
+                    "составлять письма/электронные сообщения или делать заметки на знакомые темы.",
+                    "Подготовка к экзамену Cambridge English: Preliminary позволит вам овладеть этими практическими языковыми навыками.",
+                    "Сертификат Cambridge English: Preliminary подтверждает ваше умение общаться с носителями английского языка в повседневных ситуациях.",                    
+                    "Сдав этот экзамен, вы улучшите свои языковые навыки и сможете:",          
+                    "справляться с повседневными ситуациями",
+                    "читать несложные тексты в учебниках и журналах",
+                    "писать письма на знакомые темы",
+                    "делать заметки и записи на собраниях."]
+                },
+                {
+                    "levelName":"FCE",
+                    "levelCode":"B2",
+                    "levelDuration":"216-270 часов/ 72-90 недель",
+                    "levelAge":"14-17 лет",
+                    "levelDesc":["Cambridge English: First, также известный как First Certificate in English (FCE), является квалификацией, проверяющей владение английским языком на уровне выше среднего. Сертификат свидетельствует о том, что Вы умеете общаться на английском языке в письменной и устной форме в повседневных ситуациях на работе или учебе.",
+                    "Экзамен Cambridge English: First относится к уровню B2 Общеевропейской шкалы языковой компетенции (CEFR). Достижение этого уровня означает, что вы можете:",                   
+                    "понимать основные идеи сложных письменных текстов",
+                    "поддерживать беседу на достаточно широкий ряд тем, выражая мнения и представляя аргументы",
+                    "составлять понятные, подробные письменные тексты, выражая мнения и объясняя преимущества и недостатки различных точек зрения.",
+                    "Подготовка к экзамену Cambridge English: First даст вам эти практические языковые навыки",                    
+                    "Экзамен Cambridge English: First доказывает, что вы можете использовать повседневную письменную и устную английскую речь для работы и учебы.",
+                    "В экзамене используются ситуации из реальной жизни, специально разработанные так, чтобы помочь вам:",
+                    "более эффективно общаться",
+                    "получить языковые навыки, необходимые для следующего шага к успеху."]
+                },
+                {
+                    "levelName":"CAE",
+                    "levelCode":"C1",
+                    "levelDuration":"216-270 часов/ 72-90 недель",
+                    "levelAge":"16-19 лет",
+                    "levelDesc":["Мировой спрос на знание английского на высоком уровне постоянно увеличивается. Сданный экзамен C1 Advanced означает, что вы достигли исключительных успехов.",
+                    "Почему экзамен C1 Advanced является знаком отличия:",
+                    "Всемирное признание сертификата в качестве подтверждения высокого уровня знаний.",
+                    "Более 6000 образовательных учреждений, компаний и государственных учреждений по всему миру признают сертификат C1 Advanced в качестве доказательства высокого уровня владения английским языком.",
+                    "Этот сертификат помогает развивать языковые навыки, необходимые для достижения успеха, и, кроме того, вы можете использовать его при подаче заявления для получения студенческой визы в Великобритании и Австралии.",
+                    "Обеспечивает высокий уровень владения английским языком для достижения успеха в учебе или профессиональной деятельности.",
+                    "Подготовка к экзамену C1 Advanced помогает учащимся развить навыки, необходимые для успешной учебы, работы и проживания в англоговорящих странах."]
+                }
+            ]
+        }
+    }
+}

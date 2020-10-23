@@ -1,0 +1,10 @@
+footer{
+    display: grid;
+    grid-template-columns: "copyright,links";
+}
+.copy-right{
+   
+}
+.social{
+    grid-area:links ;
+}
