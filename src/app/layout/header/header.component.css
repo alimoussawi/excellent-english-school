@@ -14,12 +14,12 @@ nav{
     font-weight: bolder;
     text-transform: uppercase;
     letter-spacing: 2px;
-    size: 22px;
+    size: 20px;
 }
 .nav-links{
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    width: 60%;
 }
 .nav-links li{
     list-style: none;
@@ -28,8 +28,8 @@ nav{
     background-color: transparent;
     appearance: none; 
     color: #77bb60;
-    border: none;
     height: 100%;
+    border: none;
     width: 2.5rem;
     padding: 5%;
     font-size: 15px;
@@ -38,9 +38,9 @@ nav{
 .nav-links a{
     text-decoration: none;
     color: #77bb60;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     font-weight: bolder;
-    font-size: 18px;
+    font-size: 15px;
     cursor: pointer;
 }
 .burger{

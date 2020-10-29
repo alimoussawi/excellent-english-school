@@ -9,10 +9,12 @@ import { ShellComponent } from './shell/shell.component';
 const routes: Routes = [
   {
     path: '',
-    component: ShellComponent},
+    component: ShellComponent,data:{animation:'isLeft'}
+  },
   {
     path: 'courses-details/:id',
     component: CourseDetailsComponent
+    ,data:{animation:'isRight'}
   },
 ];
 

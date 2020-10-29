@@ -2,8 +2,9 @@
     <div class="logo">
       <h4>Excellent English School</h4>
     </div>
-    <ul #navLinks class="nav-links">
+    <ul #navLinks id="nav-links"class="nav-links">
       <li><a #homeBtn (click)="goToHome()" >{{'navBar.HomeLink'|translate}}</a></li>
+      <li><a #aboutBtn (click)="goToAboutUs()" >{{'navBar.AboutLink'|translate}}</a></li>
       <li><a #coursesBtn (click)="goToCourses()">{{'navBar.CoursesLink'|translate}}</a></li>
       <li><a #contactBtn (click)="goToContact()">{{'navBar.ContactUsLink'|translate}}</a></li>
       <li><a>{{'navBar.OnlineTestLink'|translate}}</a></li>

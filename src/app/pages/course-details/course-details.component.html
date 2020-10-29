@@ -1,11 +1,15 @@
 <div class="container">
-    <button routerLink="/" class="btn"><-------</button>
-    <h2>{{courseName}}</h2>
-<div class="details-card " *ngFor="let level of courseLevels">
-    <div class="description">
-      <h1>{{level.levelName}}</h1>
-      <h2> {{level.levelCode}}, {{level.levelDuration}}, {{level.levelAge}}</h2>
-      <p *ngFor="let lvlDesc of level.levelDesc">{{lvlDesc}}</p>
-    </div>
+  <div class="back-btn">
+    <a routerLink="/" class="to-top">{{'CourseDetails.BackButton'|translate}}</a>
   </div>
+  <div class="course-name">
+    <h2>{{courseName}}</h2>
+  </div>
+  <div class="details-card " *ngFor="let level of courseLevels">
+      <div class="description">
+        <h1>{{level.levelName}}</h1>
+        <h2> {{level.levelCode}}, {{level.levelDuration}}, {{level.levelAge}}</h2>
+        <p *ngFor="let lvlDesc of level.levelDesc">{{lvlDesc}}</p>
+      </div>
+    </div>
 </div>

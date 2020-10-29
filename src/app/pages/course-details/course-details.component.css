@@ -1,26 +1,63 @@
 .container{
     text-align: center;
-}
 
+}
+.to-top{
+  color:black;
+  margin-top: 1em;
+	padding-top:1.8em;
+	display:inline-block;/* or block */
+	position:relative;
+	border-color:black;
+	text-decoration:none;
+	transition:all .3s ease-out;
+}
+.to-top:before{
+	content:'◀';
+	font-size:.9em;
+	position:absolute;
+	top:0;
+	left:50%;
+  margin-left:-.7em;
+	border:solid .13em #77bb60;
+	border-radius:10em;
+	width:1.8em;
+	height:1.8em;
+	line-height:1.8em;
+	border-color:inherit;
+	transition:transform .5s ease-in;
+}
+.to-top:hover{
+	color: #77bb60;
+	border-color:#77bb60;
+}
+.to-top:hover:before{
+	transform: rotate(360deg);
+}
+.course-name h2{
+  font-size: 3rem;
+
+}
 .details-card {
   display: flex;
   flex-direction: column;
+  max-width: 85%;
   margin: 1rem auto;
   box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
   margin-bottom: 5%;
   line-height: 1.4;
-  font-family: sans-serif;
   border-radius: 5px;
   overflow: hidden;
   z-index: 0;
 }
 .btn {
-    position: relative;
+    position: fixed;
     color: black;
     padding: 0.5rem;
     font-size: 14px;
     margin: auto;
-    margin-top: 1%;
+    margin-top: 10%;
+    margin-left: 10%;
     text-transform: uppercase;
     font-weight: 400;
     display: block;
@@ -35,9 +72,7 @@
   position: relative;
   z-index: 1;
 }
-.details-card .description h1, .details-card .description h2 {
-  font-family: Poppins, sans-serif;
-}
+
 .details-card .description h1 {
   line-height: 1;
   margin: 0;
@@ -49,7 +84,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #9BCC8A;
+  color: #77bb60;
   margin-top: 5px;
 }
 .details-card p {
@@ -57,20 +92,30 @@
   margin: 1rem 0 0;
   line-height: 1.8;
   font-size: 1.1rem;
-  color: #9BCC8A;
+  color: #77bb60;
   text-align: justify;
 
 }
 
 
-@media (min-width: 768px) {
-  .details-card {
-    flex-direction: row;
-    max-width: 700px;
+@media (max-width: 480px) {
+  .course-name h2{
+    font-size: 2.2rem;
   }
-  
-  .details-card .description {
-    flex-basis: 100%;
+    
+}
+@media (max-width: 360px) {
+  .course-name h2{
+    font-size: 1.5rem;
   }
+  .details-card .description h1 {
+    font-size: 1.5rem;
+  }
+  .details-card .description h2 {
+    font-size: 1.2rem;
+  }
+  .details-card p {
+    font-size: 1rem;
   
+  }
 }

@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit, Renderer2, ViewChild,ElementRef } from '@angular/core';
+import { Component, HostListener, OnInit, ViewChild,ElementRef } from '@angular/core';
 import gsap from "gsap";
 import jump from 'jump.js'
 
@@ -13,11 +13,12 @@ export class HeaderComponent implements OnInit {
    @ViewChild("navbar") navbar:ElementRef;
    @ViewChild("burger") burger:ElementRef;
    @ViewChild("homeBtn") homeBtn:ElementRef;
+   @ViewChild("aboutBtn") aboutBtn:ElementRef;
    @ViewChild("coursesBtn") coursesBtn:ElementRef;
    @ViewChild("contactBtn") contactBtn:ElementRef;
 
    windowWidth:number;
-  constructor(private renderer:Renderer2){}
+  constructor(){}
   title = 'excelent-english-school';
   burgerClicked:boolean=true;
   lang;
@@ -48,56 +49,49 @@ export class HeaderComponent implements OnInit {
     }
   
   goToHome(){
-    this.homeBtn.nativeElement.classList.add("disabled");
-    this.coursesBtn.nativeElement.classList.add("disabled");
-    this.contactBtn.nativeElement.classList.add("disabled");
+    this.disableButtons();
     jump('#Home',{
       duration: 1000,
       callback:()=>{
-        this.homeBtn.nativeElement.classList.remove("disabled");
-        this.coursesBtn.nativeElement.classList.remove("disabled");
-        this.contactBtn.nativeElement.classList.remove("disabled");
+        this.enableButtons();
       }
     });
     if(this.windowWidth<900)    this.closeNavSlide();
-
+  }
+  goToAboutUs(){
+    this.disableButtons();
+    jump('#About',{
+      duration: 1000,
+      offset: -100,
+      callback:()=>{
+        this.enableButtons();
+      }
+    });
+    if(this.windowWidth<900)    this.closeNavSlide();
   }
   goToCourses(){
-    this.homeBtn.nativeElement.classList.add("disabled");
-    this.coursesBtn.nativeElement.classList.add("disabled");
-    this.contactBtn.nativeElement.classList.add("disabled");
+    this.disableButtons();
     jump('#Courses',{
       duration: 1000,
-      offset: -50,
+      offset: -100,
       callback:()=>{
-        this.homeBtn.nativeElement.classList.remove("disabled");
-        this.coursesBtn.nativeElement.classList.remove("disabled");
-        this.contactBtn.nativeElement.classList.remove("disabled");
+        this.enableButtons();
       }
     });
     if(this.windowWidth<900)    this.closeNavSlide();
   }
   goToContact(){
-    this.homeBtn.nativeElement.classList.add("disabled");
-    this.coursesBtn.nativeElement.classList.add("disabled");
-    this.contactBtn.nativeElement.classList.add("disabled");
+    this.disableButtons();
     jump('#contact',{
       duration: 1000,
+      offset: -100,
       callback:()=>{
-        this.homeBtn.nativeElement.classList.remove("disabled");
-        this.coursesBtn.nativeElement.classList.remove("disabled");
-        this.contactBtn.nativeElement.classList.remove("disabled");
-
+      this.enableButtons();
       }
     });
     if(this.windowWidth<900)    this.closeNavSlide();
   }
   
-  goToTest(){
-    jump('#contact',{
-      duration: 1000,
-    });
-  }
   navSlide(){
     if(this.windowWidth<900){
     let timeline=gsap.timeline({defaults:{ease:"power1.out"}});
@@ -116,7 +110,6 @@ export class HeaderComponent implements OnInit {
 onResize(event) {
   console.log(event.target.innerWidth);
   this.windowWidth=event.target.innerWidth;
-  
 }
 closeNavSlide(){
   this.burgerClicked=false;
@@ -126,5 +119,17 @@ closeNavSlide(){
 changeLang(lang){
   localStorage.setItem('lang',lang);
   window.location.reload();
+}
+disableButtons(){
+  this.homeBtn.nativeElement.classList.add("disabled");
+  this.aboutBtn.nativeElement.classList.add("disabled");
+  this.coursesBtn.nativeElement.classList.add("disabled");
+  this.contactBtn.nativeElement.classList.add("disabled");
+}
+enableButtons(){
+ this.homeBtn.nativeElement.classList.remove("disabled");
+ this.aboutBtn.nativeElement.classList.remove("disabled");
+ this.coursesBtn.nativeElement.classList.remove("disabled");
+ this.contactBtn.nativeElement.classList.remove("disabled");
 }
 }

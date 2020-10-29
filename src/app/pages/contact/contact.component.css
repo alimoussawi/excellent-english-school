@@ -2,6 +2,10 @@
 .contact-box{
     height: 100%;
     display: grid;
+    width: 85%;
+    margin: auto;
+    box-shadow: 0px 0px 14px 18px rgba(155,204,138,0.2);
+    margin-bottom: 10%;
     grid-template-columns:1fr 1fr;
     justify-content: center;
     align-items: center;
@@ -19,6 +23,11 @@
     margin: 10%;
     padding: 25px 40px;
 }
+.info label{
+    text-align: left;
+    float: left;
+
+}
 h2{
     padding-bottom: 10px;
     margin-bottom: 10px;
@@ -26,20 +35,20 @@ h2{
 .field{
     width: 100%;
     padding: 0.5rem 1rem;
-    background-color: rgba(230, 230, 230, 0.6);
+    background-color: rgba(230, 230, 230, 0.5);
     border: 2px solid rgba(0,0,0,0);
     font-size: 1.1rem;
-    margin-bottom: 22px;
+    margin-bottom: 3%;
     outline: none;
     transition: .3s;
 }
 .field:hover{
     background-color: rgba(0, 0, 0, 0.2);
-    border: 2px solid  #9BCC8A;
+    border: 2px solid  #77bb60;
 }
 .field:focus{
     background-color: #ffff;
-    border: 2px solid  #9BCC8A;
+    border: 2px solid #77bb60;
 }
 .area{
     min-height: 150px;
@@ -51,17 +60,38 @@ h2{
     cursor: pointer;
     outline: none;
     border: none;
-    background-color: #9BCC8A;
+    background-color:#77bb60;
     transition: .3s;
 }
 .btn:hover{
     background-color: #3F3D56;
-    color: #9BCC8A;
+    color: #ffffff;
+}
+.validations{
+    margin-bottom: 1%;
+    text-align: left;
+}
+small{
+    color: red;
+    margin: 1%;
+}
+.is-inavlid{
+    border: 2px solid rgba(200,0,0,0.5);
 }
 @media screen and (max-width: 768px){
     .contact-box{
+        width: 100%;
+        box-shadow: none;
         grid-template-columns:1fr;
         grid-template-rows: 1fr 1fr;
-    }
-    
+    } 
 }
+@media (max-width: 480px) {
+    .field{
+      font-size: 0.9rem;
+    }
+    .btn{
+        font-size: 0.8rem;
+    }
+      
+  }

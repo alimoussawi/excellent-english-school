@@ -2,10 +2,12 @@
 .main{
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 15%;
+
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
 }
@@ -73,7 +75,7 @@ img {
 }
 
 .card_text {
-  color:#9BCC8A;
+  color:#77bb60;
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: .5rem;    
@@ -99,6 +101,9 @@ img {
   background-color: rgba(255, 255, 255, 0.12);
 }
 @media (min-width: 768px) {
+  h1 {
+    font-size: 45px;
+}
   .cards_item {
     width: 50%;
   }

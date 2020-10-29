@@ -1,5 +1,6 @@
 {   "navBar":{
             "HomeLink":"Home",
+            "AboutLink":"About us",
             "CoursesLink":"Courses",
             "ContactUsLink":"Contact us",
             "OnlineTestLink":"Online Test"
@@ -12,6 +13,11 @@
            "ContactUsButton":"Contact us",
            "OnlineTestButton":"Online Test"
     
+        },
+    "About":{
+            "HeaderText":"About Us",
+            "p1":"we are an established and well-known language school with highly qualified teachers and staff. It has been providing varies courses of English and German for about two years. The school is based in a spacious and well-equipped office nearby the Underground stations Botanicheskiy Sad and 23rd of August.",
+            "p2":"Whether you would like to do a general English course or study English for business or pleasure, we can offer the course exactly for YOU."
         },
     "courses":{
         "header":"OUR COURSES",
@@ -48,8 +54,9 @@
         }
     },
     "CourseDetails":{
+        "BackButton":"Back Home",
         "childrenCourse":{
-            "courseName":"childrenCourse",
+            "courseName":"Courses for Children",
             "courseLevels":[
                 {
                     "levelName":"Pre-Starters 1.1",
@@ -86,7 +93,7 @@
             ]
         },
         "adultCourse":{
-            "courseName":"adultCourse",
+            "courseName":"Courses for Adults",
             "courseLevels":[
                 {
                     "levelName":"complete biginner",
@@ -163,7 +170,7 @@
             ]
         },
         "examCourse":{
-            "courseName":"Экзаменационные курсы",
+            "courseName":"Exams Courses",
             "courseLevels":[
                 {
                     "levelName":"Starters",
@@ -283,5 +290,17 @@
                 }
             ]
         }
+    },
+    "ContactUs":{
+        "title":"Contact Us",
+        "nameLabel":"Name",
+        "name":"Your Name",
+        "emailLabel":"Email",
+        "email":"Your Email",
+        "phoneLabel":"Phone",
+        "phone":"Your Phone",
+        "messageLabel":"Message",
+        "message":"Your Message",
+        "btn":"Send Message"
     }
 }
