@@ -5,6 +5,9 @@
         <div class="info">
             <h2>{{'ContactUs.title'|translate}}</h2>
             <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">  
+                <!--needed for netlify forms-->
+                <input type="hidden" name="form-name" value="contact" />
+                <!--needed for netlify forms-->
                 <label>{{'ContactUs.nameLabel'|translate}}</label>
                 <input formControlName="name"  [ngClass]="{'is-inavlid': submitted && h.name.errors}" type="text" class="field" placeholder="{{'ContactUs.name'|translate}}">
                 <div class="validations" *ngIf="submitted && h.name.errors">
@@ -35,5 +38,6 @@
                 </div>
                 <button class="btn">{{'ContactUs.btn'|translate}}</button>
             </form>
+            
         </div>
 </div>

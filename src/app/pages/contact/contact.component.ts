@@ -1,3 +1,4 @@
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup,Validators} from '@angular/forms'
 
@@ -10,7 +11,7 @@ export class ContactComponent implements OnInit {
   contactForm:FormGroup;
   submitted=false;
 
-  constructor(private formBuilder:FormBuilder) { }
+  constructor(private formBuilder:FormBuilder,private http:HttpClient){ }
 
   ngOnInit(): void {
     this.contactForm=this.formBuilder.group({
@@ -24,10 +25,22 @@ export class ContactComponent implements OnInit {
   onSubmit(){
     this.submitted=true;
     if(this.contactForm.invalid){
-      alert(JSON.stringify(this.contactForm.errors))
       return;
     }
-    alert("sucess sign up"+JSON.stringify(this.contactForm.value));
+    else{    
+      const body=new HttpParams()
+      .set('form-name','contact')
+      .append('name',this.contactForm.value.name)
+      .append('email',this.contactForm.value.email)
+      .append('phone',this.contactForm.value.phone)
+      .append('message',this.contactForm.value.message);
+      this.http.post('/', body.toString(), {headers: { 'Content-Type': 'application/x-www-form-urlencoded' }}).subscribe(
+        res => {}
+      );
+      this.contactForm.reset();
+      this.submitted=false;
+      return;
+    }
   }
 
   get h(){

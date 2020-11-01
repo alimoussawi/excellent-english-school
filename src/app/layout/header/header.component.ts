@@ -56,7 +56,7 @@ export class HeaderComponent implements OnInit {
         this.enableButtons();
       }
     });
-    if(this.windowWidth<900)    this.closeNavSlide();
+    if(this.windowWidth<900)    this.closeNavSlide(null,true);
   }
   goToAboutUs(){
     this.disableButtons();
@@ -67,7 +67,7 @@ export class HeaderComponent implements OnInit {
         this.enableButtons();
       }
     });
-    if(this.windowWidth<900)    this.closeNavSlide();
+    if(this.windowWidth<900)    this.closeNavSlide(null,true);
   }
   goToCourses(){
     this.disableButtons();
@@ -78,7 +78,7 @@ export class HeaderComponent implements OnInit {
         this.enableButtons();
       }
     });
-    if(this.windowWidth<900)    this.closeNavSlide();
+    if(this.windowWidth<900)    this.closeNavSlide(null,true);
   }
   goToContact(){
     this.disableButtons();
@@ -89,31 +89,45 @@ export class HeaderComponent implements OnInit {
       this.enableButtons();
       }
     });
-    if(this.windowWidth<900)    this.closeNavSlide();
+    if(this.windowWidth<900)    this.closeNavSlide(null,true);
   }
   
   navSlide(){
     if(this.windowWidth<900){
-    let timeline=gsap.timeline({defaults:{ease:"power1.out"}});
+    let slideTimeline=gsap.timeline({defaults:{ease:"power1.out"}});
     if(this.burgerClicked){
-      timeline.to(".nav-links",{display:"flex",opacity:"1",duration:1});
-      timeline.to(".nav-links li",{opacity:"1",visibility:"visible",duration:1,stagger:0.25},"-=1");
+      this.openNavSlide(slideTimeline);
     }
     else{ 
-      timeline.to(".nav-links",{display:"none",opacity:"0",duration:1});
-      timeline.to(".nav-links li",{opacity:"0",visibility:"hidden",duration:1,stagger:0.25},"-=1");
+      this.closeNavSlide(slideTimeline);
     }
-    this.burgerClicked=!this.burgerClicked;
   }
 }
 @HostListener('window:resize', ['$event'])
 onResize(event) {
   console.log(event.target.innerWidth);
   this.windowWidth=event.target.innerWidth;
+  let slideTimeline=gsap.timeline({defaults:{ease:"power1.out"}});
+  if(this.windowWidth>900){
+    this.openNavSlide(slideTimeline);
+  } else this.closeNavSlide(slideTimeline);
 }
-closeNavSlide(){
+openNavSlide(timeline){
   this.burgerClicked=false;
-  this.navSlide();
+  timeline.to(".nav-links",{display:"flex",opacity:"1",duration:1});
+  timeline.to(".nav-links li",{opacity:"1",visibility:"visible",duration:1,stagger:0.25},"-=1");
+}
+closeNavSlide(timeline?,goTo?){
+  this.burgerClicked=true;
+  if(timeline!=null){
+  timeline.to(".nav-links",{display:"none",opacity:"0",duration:0.5});
+  timeline.to(".nav-links li",{opacity:"0",visibility:"hidden",duration:0.5,stagger:0.25},"-=1");
+  }
+  if(goTo!=null){
+    let slideTimeline=gsap.timeline({defaults:{ease:"power1.out"}});
+    slideTimeline.to(".nav-links",{display:"none",opacity:"0",duration:1});
+    slideTimeline.to(".nav-links li",{opacity:"0",visibility:"hidden",duration:1,stagger:0.25},"-=1");
+  }
 }
 
 changeLang(lang){

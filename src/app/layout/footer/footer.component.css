@@ -1,10 +1,52 @@
 footer{
+    width: 100%;
+    min-height: 12vh;
     display: grid;
-    grid-template-columns: "copyright,links";
+    align-items: center;
+    text-align: center;
+    background-color: #3F3D56;
+    grid-template-columns: 1fr 2fr;
+    gap: 0.5em;
 }
 .copy-right{
-   
+  
+}
+.copy-right p{
+    color: #77bb60;;
 }
 .social{
-    grid-area:links ;
+    align-content: center;
+    text-align: center;
+    
+}
+.social a{
+    text-decoration: none;
+    color: #77bb60;
+    margin: 3%;
+    padding: 2%;
+}
+.social a img {
+    height: 5vh;
+    transition: 0.2s ease-out;
+}
+.social a img:hover{
+    filter: invert(.5) sepia(1) saturate(3) hue-rotate(70deg);
+}
+@media screen and (max-width: 768px){
+
+    footer{
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .copy-right{
+             
+    }
+    .social a img{
+        height: 5vh;
+    }
+}
+@media (max-width: 480px) {
+    .social a img{
+        height: 3vh;
+    }
 }
