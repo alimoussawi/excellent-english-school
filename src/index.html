@@ -11,10 +11,10 @@
 </head>
 <body class="mat-typography">
   <!--needed for netlify forms-->
-  <form name="contact" netlify action="thank-you" data-netlify="true" netlify-honeypot="bot-field" hidden>   
+  <form name="contact" netlify action="/done" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>   
     <input type="text" name="name"/>
     <input type="email" name="email" />
-    <input type="text" name="phone">
+    <input type="text" name="phone"/>
     <textarea name="message"></textarea>
   </form>
   <!--needed for netlify forms-->

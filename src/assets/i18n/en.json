@@ -301,6 +301,7 @@
         "phone":"Your Phone",
         "messageLabel":"Message",
         "message":"Your Message",
-        "btn":"Send Message"
+        "btn":"Send Message",
+        "successMessage":"Your message has been submitted"
     }
 }

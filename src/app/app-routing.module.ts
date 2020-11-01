@@ -12,6 +12,11 @@ const routes: Routes = [
     component: ShellComponent,data:{animation:'isLeft'}
   },
   {
+    path: 'done',
+    redirectTo: '/done',
+    pathMatch:'full'
+  },
+  {
     path: 'courses-details/:id',
     component: CourseDetailsComponent
     ,data:{animation:'isRight'}

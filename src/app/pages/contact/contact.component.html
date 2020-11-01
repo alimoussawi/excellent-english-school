@@ -31,13 +31,13 @@
                 </div>
 
                 <label>{{'ContactUs.messageLabel'|translate}}</label>
-                <textarea formControlName="message" [ngClass]="{'is-inavlid': submitted && h.message.errors}" class="field area" placeholder="{{'ContactUs.message'|translate}}"></textarea>
+                <textarea formControlName="message" [ngClass]="{'is-inavlid': submitted && h.message.errors}" class="field area" placeholder="{{'ContactUs.message'|translate}}" style="resize: none;"></textarea>
                 <div class="validations" *ngIf="submitted && h.message.errors">
                     <small *ngIf="h.message.errors.required">message required</small>
                     <small *ngIf="h.message.errors.minlength">message is too short</small>
                 </div>
                 <button class="btn">{{'ContactUs.btn'|translate}}</button>
             </form>
-            
+            <div class="success-msg"*ngIf="success" >{{'ContactUs.successMessage'|translate}}</div>
         </div>
 </div>
