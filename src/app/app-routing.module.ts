@@ -12,6 +12,9 @@ const routes: Routes = [
     component: ShellComponent,data:{animation:'isLeft'}
   },
   {
+    path: 'done'
+  },
+  {
     path: 'courses-details/:id',
     component: CourseDetailsComponent
     ,data:{animation:'isRight'}
