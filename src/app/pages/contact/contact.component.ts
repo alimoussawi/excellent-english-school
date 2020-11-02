@@ -1,6 +1,7 @@
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup,Validators} from '@angular/forms'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -11,7 +12,7 @@ export class ContactComponent implements OnInit {
   contactForm:FormGroup;
   submitted=false;
 
-  constructor(private formBuilder:FormBuilder,private http:HttpClient){ }
+  constructor(private formBuilder:FormBuilder,private http:HttpClient,private router:Router){ }
 
   ngOnInit(): void {
     this.contactForm=this.formBuilder.group({
@@ -35,10 +36,11 @@ export class ContactComponent implements OnInit {
       .append('email',this.contactForm.value.email)
       .append('phone',this.contactForm.value.phone)
       .append('message',this.contactForm.value.message);
-      this.http.post<any>('/done/', body.toString(),{headers,responseType:'text' as 'json'}).subscribe(
+      this.http.post<any>('/done', body.toString(),{headers,responseType:'text' as 'json'}).subscribe(
         res => {
           this.contactForm.reset();
           this.submitted=false;
+          this.router.navigate(['/done']);
           return res;
         }
       );
