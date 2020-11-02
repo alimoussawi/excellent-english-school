@@ -13,7 +13,8 @@ const routes: Routes = [
   },
   {
     path: 'done',
-    redirectTo: '/done'
+    redirectTo: '/done',
+    pathMatch:'full'
   },
   {
     path: 'courses-details/:id',
