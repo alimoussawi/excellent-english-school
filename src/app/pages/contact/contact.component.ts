@@ -1,4 +1,4 @@
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup,Validators} from '@angular/forms'
 
@@ -28,13 +28,14 @@ export class ContactComponent implements OnInit {
       return;
     }
     else{    
+      const headers = new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded');
       const body=new HttpParams()
       .set('form-name','contact')
       .append('name',this.contactForm.value.name)
       .append('email',this.contactForm.value.email)
       .append('phone',this.contactForm.value.phone)
       .append('message',this.contactForm.value.message);
-      this.http.post<any>('/done/', body.toString(), {headers: { 'Content-Type': 'application/x-www-form-urlencoded' ,'responseType':'text'}}).subscribe(
+      this.http.post<any>('/done/', body.toString(),{headers,responseType:'text' as 'json'}).subscribe(
         res => {
           this.contactForm.reset();
           this.submitted=false;
