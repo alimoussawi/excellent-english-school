@@ -34,8 +34,8 @@ export class ContactComponent implements OnInit {
       .append('email',this.contactForm.value.email)
       .append('phone',this.contactForm.value.phone)
       .append('message',this.contactForm.value.message);
-      this.http.post('/thank-you', body.toString(), {headers: { 'Content-Type': 'application/x-www-form-urlencoded' ,'responseType':'text'}}).subscribe(
-        res => {}
+      this.http.post<any>('/', body.toString(), {headers: { 'Content-Type': 'application/x-www-form-urlencoded' ,'responseType':'text'}}).subscribe(
+        res => {return res;}
       );
       this.contactForm.reset();
       this.submitted=false;
