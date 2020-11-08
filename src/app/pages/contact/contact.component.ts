@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class ContactComponent implements OnInit {
   contactForm:FormGroup;
   submitted=false;
-
+  success=false;
   constructor(private formBuilder:FormBuilder,private http:HttpClient,private router:Router){ }
 
   ngOnInit(): void {
@@ -39,9 +39,8 @@ export class ContactComponent implements OnInit {
       this.http.post<any>('/done', body.toString(),{headers,responseType:'text' as 'json'}).subscribe(
         res => {
           this.contactForm.reset();
-          this.submitted=false;
-          this.router.navigate(['/done']);
-          return res;
+          this.success=true;
+          setTimeout(()=>{this.submitted=false,this.success=false},10000);
         }
       );
     }

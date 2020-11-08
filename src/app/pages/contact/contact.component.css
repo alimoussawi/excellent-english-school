@@ -80,6 +80,12 @@ small{
     color: red;
     margin: 1%;
 }
+.success-msg{
+    margin: 2%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #77bb60;
+}
 .is-inavlid{
     border: 2px solid rgba(200,0,0,0.5);
 }
@@ -98,5 +104,7 @@ small{
     .btn{
         font-size: 0.8rem;
     }
-    
+    .success-msg{
+        font-size: 0.8rem;
+    }   
   }
